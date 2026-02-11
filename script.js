@@ -124,13 +124,9 @@ function findAndClick(className, text) {
     const buttons = document.querySelectorAll(className);
     buttons.forEach(btn => {
         if (btn.textContent === text) {
-            // 1. Add the "pressed" class
             btn.classList.add('is-pressed');
-            
-            // 2. Actually click the button logic
             btn.click();
-            
-            // 3. Remove the class after 100ms so it "pops" back up
+    
             setTimeout(() => {
                 btn.classList.remove('is-pressed');
             }, 100);
