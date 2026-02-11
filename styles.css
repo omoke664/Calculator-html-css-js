@@ -24,7 +24,8 @@ body{
     padding:5px;
     border-radius:7px;
     font-size:24px;
-    overflow:auto;
+    overflow: auto hidden;
+    cursor:text;
 }
 .numbers{
     justify-content:space-around;
